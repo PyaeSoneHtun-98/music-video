@@ -1,0 +1,18 @@
+# The working song is for local editing and is not part of the public project.
+/sparkle.m4a
+
+# Rendered videos and temporary output are reproducible from the project plan.
+/renders/
+/exports/
+/tmp/
+*.mp4
+*.mov
+
+# Earlier concept sheet with inaccurate aspect ratio and a clothing error.
+/storyboards/S01-the-town-after-rain.png
+/props/P01-reunion-props-v1.png
+
+# Local tooling.
+__pycache__/
+.DS_Store
+Thumbs.db
