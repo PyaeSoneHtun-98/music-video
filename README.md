@@ -17,6 +17,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S02 production sheet: [storyboards/S02.html](storyboards/S02.html) (approved)
 - S03 production sheet: [storyboards/S03.html](storyboards/S03.html) (approved)
 - S04 production sheet: [storyboards/S04.html](storyboards/S04.html) (approved one-generation combined image)
+- S05 production sheet: [storyboards/S05.html](storyboards/S05.html) (approved combined image with one route correction)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
