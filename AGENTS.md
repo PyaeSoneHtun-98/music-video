@@ -16,7 +16,7 @@ If any sources disagree, fix the inconsistency before generating more assets.
 
 ## Asset workflow
 
-- Generate each shot's visual reference as an independent **16:9 landscape** frame. Never use a multi-panel contact sheet directly as a video input.
+- Plan a review sheet either from independent **16:9 landscape** frames or from one combined image with four equal 16:9 quadrants, as approved for S04. Never use a multi-panel contact sheet directly as a video input; prepare one separate 16:9 input per video shot after sheet approval.
 - Give every frame a stable ID and path: `frames/S01-01-coastal-town.png`, `frames/S01-02-rail-drops.png`, and so on.
 - Reuse the source character sheets, appropriate location masters and prop master as image references. Prompt for only the people and objects the shot needs.
 - Pyae Sone wears the white short-sleeve shirt and dark trousers; his hands are empty unless a story action explicitly uses the charm. Do not add a carried jacket or extra shirt.

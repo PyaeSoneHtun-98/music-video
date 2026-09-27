@@ -16,6 +16,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S01 production sheet: [storyboards/S01.html](storyboards/S01.html) (six true 16:9 picture windows)
 - S02 production sheet: [storyboards/S02.html](storyboards/S02.html) (approved)
 - S03 production sheet: [storyboards/S03.html](storyboards/S03.html) (approved)
+- S04 production sheet: [storyboards/S04.html](storyboards/S04.html) (approved one-generation combined image)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
@@ -30,7 +31,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 
 1. Use the character sheets `zinzin.png` and `pyaesone.png` as identity references.
 2. Write a prompt for each shot in `prompts/Sxx.md` and keep timing in `production/shot-list.csv`.
-3. Generate each opening frame as its own near-16:9 image. A multi-panel contact sheet is a visual plan, not a Seedance input.
+3. For review, generate either independent near-16:9 frames or one combined sheet with equal 16:9 quadrants. Prepare one separate 16:9 image per shot before using it as a Seedance input; the full contact sheet is a visual plan.
 4. Present each completed sheet for visual approval before starting the next one. Fix any malformed image or continuity issue first.
 5. Generate the video shots at the platform’s **16:9 setting**; keep characters, wardrobe and town geography consistent.
 6. Assemble and trim the videos to the local audio in an editor, then export the master at 1920 × 1080.

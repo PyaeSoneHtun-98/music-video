@@ -5,6 +5,7 @@ This is one fictional town. Reuse the same architecture and landmarks across sho
 ## Fixed geography
 
 - The **hillside tram stop** sits west and above the harbor. Its tracks descend toward the waterfront.
+- A smaller covered shelter lies farther downhill on that same tram line, before the market road. Zin Zin can reach it from the descending hillside steps without reversing her route.
 - The **covered market and bakery** sit midway down the hill, beside the lower road.
 - The **ferry pier** sits on the lower waterfront south of the market.
 - A **narrow footbridge** crosses the canal between the market road and the eastern breakwater path.
