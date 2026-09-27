@@ -33,7 +33,7 @@ Each row represents one video generation target. The three beats are shot ideas,
 |---|---|---|---|
 | 01 | 0:00–0:15 | The town after rain | High wide view of coastal town; water dripping from awnings; the lighthouse appears across the bay; separate first glimpses of Zin Zin and Pyae Sone looking toward it. |
 | 02 | 0:15–0:30 | Two journeys begin | Zin Zin boards a tram holding the teal plush; Pyae Sone steps off a ferry empty-handed; match their turns toward the lighthouse. |
-| 03 | 0:30–0:45 | The promise | Warm memory of the pair drawing a tiny lighthouse on a postcard; close-up of their hands; match cut to the same drawing in Zin Zin’s bag. |
+| 03 | 0:30–0:45 | The promise | Warm memory: Pyae Sone draws the lighthouse on a postcard and gives it to Zin Zin; match cut to the same drawing in her hand on the present-day hillside. |
 | 04 | 0:45–1:00 | Almost on time | He waits at the overlook rail; she is delayed at the tram stop; alternating looks toward the sky as clouds gather. |
 | 05 | 1:00–1:15 | First downpour | Rain sweeps through the harbor; Zin Zin shields the plush; Pyae Sone turns into the wind and leaves the overlook to find her. |
 | 06 | 1:15–1:30 | Closed route | Tram lights go dark; passengers step out; Zin Zin walks toward the old pedestrian bridge while he takes the lower market road. |
