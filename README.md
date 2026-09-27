@@ -5,6 +5,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 ## Current state
 
 - Story outline and 28-sheet production grid: [story-outline.md](story-outline.md)
+- Production instructions for future agents: [AGENTS.md](AGENTS.md)
 - Master schedule and progress: [production/shot-list.csv](production/shot-list.csv)
 - Identity and framing rules: [production/continuity.md](production/continuity.md)
 - Town geography and reusable references: [production/world-bible.md](production/world-bible.md)
@@ -12,7 +13,8 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - First full-frame visual: [frames/S01-01-coastal-town.png](frames/S01-01-coastal-town.png)
 - Reusable [location references](locations/) and [prop reference](props/P01-reunion-props.png)
 - Reproducible [reference asset prompts](prompts/reference-assets.md)
-- S01 contact sheet: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
+- S01 production sheet: [storyboards/S01.html](storyboards/S01.html) (six true 16:9 picture windows)
+- Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
 

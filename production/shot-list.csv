@@ -1,5 +1,5 @@
 sheet_id,start_seconds,end_seconds,title,status,storyboard,first_frame
-S01,0,15,The town after rain,in_progress,storyboards/S01-the-town-after-rain-v2.png,frames/S01-01-coastal-town.png
+S01,0,15,The town after rain,ready,storyboards/S01.html,frames/S01-01-coastal-town.png
 S02,15,30,Two journeys begin,planned,,
 S03,30,45,The promise,planned,,
 S04,45,60,Almost on time,planned,,

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S01 — The town after rain</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Arial Narrow", "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #080a0d; color: #eaecef; }
+    main { max-width: 1900px; margin: auto; padding: 24px 22px 40px; }
+    header { display: flex; align-items: center; gap: 22px; margin-bottom: 22px; }
+    header::before, header::after { content: ""; height: 1px; background: #c8ccd3; flex: 1; }
+    h1 { margin: 0; font: 600 clamp(20px, 2.2vw, 34px)/1.15 "Arial Narrow", "Segoe UI", sans-serif; letter-spacing: .18em; text-align: center; text-transform: uppercase; white-space: nowrap; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 12px; }
+    figure { margin: 0; min-width: 0; }
+    .frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border: 2px solid #c8ccd3; background: #15191f; }
+    .frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .number { position: absolute; top: 0; left: 0; min-width: 34px; padding: 4px 8px; background: #080a0d; border-right: 2px solid #c8ccd3; border-bottom: 2px solid #c8ccd3; font-size: 20px; font-weight: 700; line-height: 1; }
+    figcaption { padding: 7px 2px 0; font-size: clamp(12px, 1.2vw, 17px); letter-spacing: .05em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .time { font-weight: 700; }
+    footer { margin-top: 22px; color: #9ca5b2; font-size: 13px; letter-spacing: .04em; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } header::before, header::after { display: none; } h1 { white-space: normal; text-align: left; } }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } main { padding: 16px; } }
+    @media print { body { background: #080a0d; print-color-adjust: exact; -webkit-print-color-adjust: exact; } main { max-width: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>S01 — The town after rain | 15 seconds</h1></header>
+    <section class="grid" aria-label="Shot sequence">
+      <figure><div class="frame"><img src="../frames/S01-01-coastal-town.png" alt="Coastal town and lighthouse after rain"><span class="number">1</span></div><figcaption><span class="time">00–02s</span> | WIDE — Coastal town</figcaption></figure>
+      <figure><div class="frame"><img src="../frames/S01-02-rail-drops.png" alt="Raindrops falling from a harbor rail"><span class="number">2</span></div><figcaption><span class="time">02–05s</span> | DETAIL — Rain on rail</figcaption></figure>
+      <figure><div class="frame"><img src="../frames/S01-03-lighthouse.png" alt="Lighthouse across the bay under opening clouds"><span class="number">3</span></div><figcaption><span class="time">05–07s</span> | WIDE — Lighthouse</figcaption></figure>
+      <figure><div class="frame"><img src="../frames/S01-04-zinzin-tram.png" alt="Zin Zin looks up from the tram window"><span class="number">4</span></div><figcaption><span class="time">07–10s</span> | MEDIUM — She looks up</figcaption></figure>
+      <figure><div class="frame"><img src="../frames/S01-05-pyaesone-pier.png" alt="Pyae Sone arrives empty handed at the pier"><span class="number">5</span></div><figcaption><span class="time">10–12s</span> | MEDIUM — He arrives</figcaption></figure>
+      <figure><div class="frame"><img src="../frames/S01-06-parallel-gaze.png" alt="Split screen of the two characters looking toward the same lighthouse"><span class="number">6</span></div><figcaption><span class="time">12–15s</span> | MATCH CUT — Same direction</figcaption></figure>
+    </section>
+    <footer>Production sheet only · Every picture window is 16:9 · Captions and shot numbers are not part of the video</footer>
+  </main>
+</body>
+</html>
