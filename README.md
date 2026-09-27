@@ -18,6 +18,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S03 production sheet: [storyboards/S03.html](storyboards/S03.html) (approved)
 - S04 production sheet: [storyboards/S04.html](storyboards/S04.html) (approved one-generation combined image)
 - S05 production sheet: [storyboards/S05.html](storyboards/S05.html) (approved combined image with one route correction)
+- S06 production sheet: [storyboards/S06-combined.png](storyboards/S06-combined.png) (approved clean combined image with one prop correction)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
@@ -34,6 +35,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 2. Write a prompt for each shot in `prompts/Sxx.md` and keep timing in `production/shot-list.csv`.
 3. For review, generate either independent near-16:9 frames or one combined sheet with equal 16:9 quadrants. Prepare one separate 16:9 image per shot before using it as a Seedance input; the full contact sheet is a visual plan.
 4. Present each completed sheet for visual approval before starting the next one. Fix any malformed image or continuity issue first.
+   Future combined-sheet reviews show the clean unlabeled image; timestamps live in the prompt and schedule files, not on the image.
 5. Generate the video shots at the platform’s **16:9 setting**; keep characters, wardrobe and town geography consistent.
 6. Assemble and trim the videos to the local audio in an editor, then export the master at 1920 × 1080.
 7. Run `python scripts/validate_project.py` after adding or changing still frames or the schedule.
