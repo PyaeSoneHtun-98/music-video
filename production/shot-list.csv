@@ -1,6 +1,6 @@
 sheet_id,start_seconds,end_seconds,title,status,storyboard,first_frame
 S01,0,15,The town after rain,ready,storyboards/S01.html,frames/S01-01-coastal-town.png
-S02,15,30,Two journeys begin,planned,,
+S02,15,30,Two journeys begin,ready,storyboards/S02.html,frames/S02-01-zinzin-tram-stop.png
 S03,30,45,The promise,planned,,
 S04,45,60,Almost on time,planned,,
 S05,60,75,First downpour,planned,,

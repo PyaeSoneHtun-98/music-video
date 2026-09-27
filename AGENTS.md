@@ -23,6 +23,7 @@ If any sources disagree, fix the inconsistency before generating more assets.
 - Use character names in production text only. No on-screen name cards, captions or title cards.
 - Record the reference images and final generation prompt in the matching `prompts/Sxx.md`.
 - Build presentation sheets from the individual frames while preserving each panel's 16:9 aspect ratio.
+- Present each completed sheet for the user's visual review. Keep its tracker status `in_review` and do not begin the next sheet until the user explicitly approves it. Fix any malformed frame or continuity problem before approval.
 - Run `python scripts/validate_project.py` before committing a milestone.
 
 ## Repository hygiene

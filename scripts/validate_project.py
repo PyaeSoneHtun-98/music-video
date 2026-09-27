@@ -11,7 +11,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "production" / "shot-list.csv"
 EXPECTED_END = 410
-ALLOWED_STATUS = {"planned", "in_progress", "ready", "rendered", "edited"}
+ALLOWED_STATUS = {"planned", "in_progress", "in_review", "ready", "rendered", "edited"}
 
 
 def png_size(path: Path) -> tuple[int, int]:
