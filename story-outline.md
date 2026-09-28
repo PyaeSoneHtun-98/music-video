@@ -46,7 +46,7 @@ Each row represents one video generation target. The three beats are shot ideas,
 | 13 | 3:00–3:15 | Different stairways | Zin Zin climbs the west steps; he climbs the east steps; crosscuts preserve the lighthouse as a clear destination. |
 | 14 | 3:15–3:30 | Wind and water | A gust forces Zin Zin under a shrine roof; he crosses a flooded lane; the lighthouse lamp disappears behind rain. |
 | 15 | 3:30–3:45 | Doubt | Zin Zin sees the empty overlook through the storm and thinks she has missed him; close-up of her hand tightening around the plush. |
-| 16 | 3:45–4:00 | The clue | Pyae Sone sees the lighthouse drawing on an old mural or postcard display; realizes the agreed place is the upper lookout, not the harbor gate. |
+| 16 | 3:45–4:00 | The clue | At the east stair junction, Pyae Sone recognizes the upper overlook rail in a weathered picture mural echoing his postcard drawing and takes the upper steps through the rain. |
 | 17 | 4:00–4:15 | Town of reflections | Fast visual sequence of shoes splashing, windows, overhead wires, harbor lights, and alternating faces, building momentum without new plot. |
 | 18 | 4:15–4:30 | The bell | A harbor bell rings; both turn to the same sound from different locations; use matching close-ups and matching camera movement. |
 | 19 | 4:30–4:45 | Last crossing | Zin Zin crosses a narrow bridge toward the lighthouse; he reaches the other end seconds later; the camera reveals the near miss. |

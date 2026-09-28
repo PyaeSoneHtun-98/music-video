@@ -11,6 +11,7 @@ This is one fictional town. Reuse the same architecture and landmarks across sho
 - A **narrow footbridge** crosses the canal between the market road and the eastern breakwater path.
 - The **lighthouse** stands at the eastern end of the breakwater. The **upper overlook** next to it faces back toward the town and harbor. West steps rise from the footbridge; east steps rise from the pier road.
 - A small roofed wayside shrine alcove sits beside a west stair landing. A short drainage lane between east stair flights can flood during the storm. These are parts of the established approaches, not separate destinations.
+- At an east stair junction above the ferry pier, a weathered blue-and-cream picture tile shows the lighthouse, curved upper overlook rail, and both stair approaches. It has no writing.
 - From the opening hillside view, the lighthouse is across the bay to the **right**. Preserve this directional relationship in later wide shots.
 
 ## Reusable reference assets
