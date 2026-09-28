@@ -8,8 +8,8 @@
 
 ## Characters and visual anchors
 
-- **Zin Zin:** round gold glasses, side braid with red tie, blue patterned top, wide-leg jeans, brown shoulder bag with spotted plush charm, teal dinosaur plush. Cheerful and expressive.
-- **Pyae Sone:** short dark hair, black glasses, white short-sleeve shirt, dark trousers, empty hands. Calm and thoughtful. Use Pyae Sone as his name even though the character-sheet image contains a different printed title. Do not show him holding an extra shirt, jacket, or other clothing.
+- **Zin Zin:** round gold glasses, side braid with red tie, blue patterned top, wide-leg jeans, brown shoulder bag, teal dinosaur plush. The spotted plush charm hangs from her bag before S10 and again from S26. Cheerful and expressive.
+- **Pyae Sone:** short dark hair, black glasses, white short-sleeve shirt, dark trousers, empty hands until he retrieves the spotted charm in S11; he carries it through S25 and returns it in S26. Calm and thoughtful. Use Pyae Sone as his name even though the character-sheet image contains a different printed title. Do not show him holding an extra shirt, jacket, or other clothing.
 - Keep the outfits and accessories consistent. Use the teal plush, spotted bag charm, and reflections as recurring visual cues.
 
 ## Story
