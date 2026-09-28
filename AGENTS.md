@@ -24,7 +24,7 @@ If any sources disagree, fix the inconsistency before generating more assets.
 - Record the reference images and final generation prompt in the matching `prompts/Sxx.md`.
 - Build presentation sheets from the individual frames while preserving each panel's 16:9 aspect ratio.
 - Present future combined review sheets as clean images without shot numbers, timestamps or captions. Do not make new labeled HTML or screenshot previews. Keep timing and shot descriptions in `prompts/Sxx.md` and `production/shot-list.csv`; those production notes are not video inputs. Existing labeled preview files are archival review aids only.
-- Present each completed sheet for the user's visual review. Keep its tracker status `in_review` and do not begin the next sheet until the user explicitly approves it. Fix any malformed frame or continuity problem before approval.
+- Present each completed sheet for the user's visual review. Keep its tracker status `in_review` until the user explicitly approves it. Fix any malformed frame or continuity problem before approval. When the user approves a sheet, mark it ready, validate, commit and push the milestone, then continue with the next sheet.
 - Run `python scripts/validate_project.py` before committing a milestone.
 
 ## Repository hygiene

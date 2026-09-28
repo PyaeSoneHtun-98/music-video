@@ -6,7 +6,7 @@ This is one fictional town. Reuse the same architecture and landmarks across sho
 
 - The **hillside tram stop** sits west and above the harbor. Its tracks descend toward the waterfront.
 - A smaller covered shelter lies farther downhill on that same tram line, before the market road. Zin Zin can reach it from the descending hillside steps without reversing her route.
-- The **covered market and bakery** sit midway down the hill, beside the lower road.
+- The **covered market and bakery** sit midway down the hill, beside the lower road. The road itself is open to rain and has smooth dark asphalt; market canopies cover only stalls and side walkways, not the street.
 - The **ferry pier** sits on the lower waterfront south of the market.
 - A **narrow footbridge** crosses the canal between the market road and the eastern breakwater path.
 - The **lighthouse** stands at the eastern end of the breakwater. The **upper overlook** next to it faces back toward the town and harbor. West steps rise from the footbridge; east steps rise from the pier road.
@@ -20,7 +20,7 @@ This is one fictional town. Reuse the same architecture and landmarks across sho
 | L02 | Hillside tram stop | `locations/L02-tram-stop.png` | Small covered platform, descending rails, distant harbor. |
 | L03 | Ferry pier | `locations/L03-ferry-pier.png` | Low terminal, wet bollards, moored ferry, lighthouse across water. |
 | L04 | Lighthouse overlook | `locations/L04-lighthouse-overlook.png` | White lighthouse, wet viewing terrace, rail facing town, two stair approaches. |
-| L05 | Covered market and bakery | `locations/L05-market-bakery.png` | Mid-slope covered market, corner bakery, road descending to waterfront. |
+| L05 | Covered market and bakery | `locations/L05-market-bakery.png` | Mid-slope market and corner bakery architecture, road descending to waterfront. For current storm scenes, use the open asphalt road shown in `storyboards/S09-combined-v2.png`; the older location master is not authoritative for the road surface or overhead cover. |
 | L06 | Canal footbridge | `locations/L06-footbridge.png` | Narrow crossing from market road toward eastern breakwater path. |
 | P01 | Recurring props | `props/P01-reunion-props.png` | Zin Zin's teal plush, brown shoulder bag with spotted charm, lighthouse postcard. |
 
