@@ -40,6 +40,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S25 reunion sheet: [storyboards/S25-combined.png](storyboards/S25-combined.png) (approved clean four-panel image)
 - S26 charm-return sheet: [storyboards/S26-combined.png](storyboards/S26-combined.png) (approved clean four-panel image)
 - S27 new-morning sheet: [storyboards/S27-combined-v3.png](storyboards/S27-combined-v3.png) (approved clean four-panel image; couple beside the plush at the right-hand rail)
+- S28 final frame: [frames/S28-01-final-image-v2.png](frames/S28-01-final-image-v2.png) (approved clean 16:9 image; couple at the rail, shirt matched to character sheet)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
