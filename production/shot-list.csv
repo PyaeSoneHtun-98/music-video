@@ -2,28 +2,28 @@ sheet_id,start_seconds,end_seconds,title,status,storyboard,first_frame
 S01,0,15,The town after rain,ready,storyboards/S01.html,frames/S01-01-coastal-town.png
 S02,15,30,Two journeys begin,ready,storyboards/S02.html,frames/S02-01-zinzin-tram-stop.png
 S03,30,45,The promise,ready,storyboards/S03.html,frames/S03-01-summer-overlook.png
-S04,45,60,Almost on time,ready,storyboards/S04.html,
-S05,60,75,First downpour,ready,storyboards/S05.html,
-S06,75,90,Closed route,ready,storyboards/S06-combined.png,
+S04,45,60,Almost on time,ready,storyboards/S04-combined.png,frames/S04-01-input.png
+S05,60,75,First downpour,ready,storyboards/S05-combined.png,frames/S05-01-input.png
+S06,75,90,Closed route,ready,storyboards/S06-combined.png,frames/S06-01-input.png
 S07,90,105,Passing shadows,ready,storyboards/S07-combined.png,frames/S07-01-bus-between.png
-S08,105,120,Warm window,ready,storyboards/S08-combined-v2.png,
-S09,120,135,His route,ready,storyboards/S09-combined-v2.png,
-S10,135,150,The charm falls,ready,storyboards/S10-combined-v2.png,
-S11,150,165,Recognition,ready,storyboards/S11-combined.png,
-S12,165,180,Summer memory,ready,storyboards/S12-combined.png,
-S13,180,195,Different stairways,ready,storyboards/S13-combined-v2.png,
-S14,195,210,Wind and water,ready,storyboards/S14-combined.png,
-S15,210,225,Doubt,ready,storyboards/S15-combined.png,
-S16,225,240,The clue,ready,storyboards/S16-combined.png,
-S17,240,255,Town of reflections,ready,storyboards/S17-combined.png,
-S18,255,270,The bell,ready,storyboards/S18-combined.png,
-S19,270,285,Last crossing,ready,storyboards/S19-combined-v3.png,
-S20,285,300,He calls out,ready,storyboards/S20-combined-v3.png,
-S21,300,315,Storm breaks,ready,storyboards/S21-combined-v3.png,
-S22,315,330,Where they began,ready,storyboards/S22-combined-v2.png,
-S23,330,345,The final steps,ready,storyboards/S23-combined.png,
+S08,105,120,Warm window,ready,storyboards/S08-combined-v2.png,frames/S08-01-input.png
+S09,120,135,His route,ready,storyboards/S09-combined-v2.png,frames/S09-01-input.png
+S10,135,150,The charm falls,ready,storyboards/S10-combined-v2.png,frames/S10-01-input.png
+S11,150,165,Recognition,ready,storyboards/S11-combined.png,frames/S11-01-input.png
+S12,165,180,Summer memory,ready,storyboards/S12-combined.png,frames/S12-01-input.png
+S13,180,195,Different stairways,ready,storyboards/S13-combined-v2.png,frames/S13-01-input.png
+S14,195,210,Wind and water,ready,storyboards/S14-combined.png,frames/S14-01-input.png
+S15,210,225,Doubt,ready,storyboards/S15-combined.png,frames/S15-01-input.png
+S16,225,240,The clue,ready,storyboards/S16-combined.png,frames/S16-01-input.png
+S17,240,255,Town of reflections,ready,storyboards/S17-combined.png,frames/S17-01-input.png
+S18,255,270,The bell,ready,storyboards/S18-combined.png,frames/S18-01-input.png
+S19,270,285,Last crossing,ready,storyboards/S19-combined-v3.png,frames/S19-01-input.png
+S20,285,300,He calls out,ready,storyboards/S20-combined-v3.png,frames/S20-01-input.png
+S21,300,315,Storm breaks,ready,storyboards/S21-combined-v3.png,frames/S21-01-input.png
+S22,315,330,Where they began,ready,storyboards/S22-combined-v2.png,frames/S22-01-input.png
+S23,330,345,The final steps,ready,storyboards/S23-combined.png,frames/S23-01-input.png
 S24,345,360,First sight,ready,frames/S24-01-first-sight.png,frames/S24-01-first-sight.png
-S25,360,375,Reunion,ready,storyboards/S25-combined.png,
-S26,375,390,The little promise,ready,storyboards/S26-combined.png,
-S27,390,405,New morning,ready,storyboards/S27-combined-v3.png,
+S25,360,375,Reunion,ready,storyboards/S25-combined.png,frames/S25-01-input.png
+S26,375,390,The little promise,ready,storyboards/S26-combined.png,frames/S26-01-input.png
+S27,390,405,New morning,ready,storyboards/S27-combined-v3.png,frames/S27-01-input.png
 S28,405,410,Final image,ready,frames/S28-01-final-image-v2.png,frames/S28-01-final-image-v2.png

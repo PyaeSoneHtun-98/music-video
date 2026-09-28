@@ -10,6 +10,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "production" / "shot-list.csv"
+VIDEO_INPUTS = ROOT / "production" / "video-inputs.csv"
 EXPECTED_END = 410
 ALLOWED_STATUS = {"planned", "in_progress", "in_review", "ready", "rendered", "edited"}
 
@@ -65,6 +66,44 @@ def main() -> int:
     if next_start != EXPECTED_END:
         errors.append(f"schedule ends at {next_start}s, expected {EXPECTED_END}s")
 
+    if VIDEO_INPUTS.is_file():
+        with VIDEO_INPUTS.open(newline="", encoding="utf-8") as file:
+            inputs = list(csv.DictReader(file))
+        if len(inputs) != 108:
+            errors.append(f"expected 108 standalone shot inputs, found {len(inputs)}")
+        input_next_start = 0
+        seen_shots: set[str] = set()
+        for item in inputs:
+            shot = item["shot_id"]
+            start = int(item["start_seconds"])
+            end = int(item["end_seconds"])
+            if shot in seen_shots:
+                errors.append(f"duplicate video input shot: {shot}")
+            seen_shots.add(shot)
+            if start != input_next_start or end <= start:
+                errors.append(f"{shot}: non-contiguous or invalid video input time {start}–{end}")
+            input_next_start = end
+
+            relative = item["input_frame"]
+            if not relative.startswith("frames/"):
+                errors.append(f"{shot}: video input is not a standalone frame: {relative}")
+            path = ROOT / relative
+            if not path.is_file():
+                errors.append(f"{shot}: missing video input: {relative}")
+            else:
+                try:
+                    width, height = png_size(path)
+                    if abs(width / height - 16 / 9) > 0.002:
+                        errors.append(f"{shot}: {relative} is {width}x{height}; expected near 16:9")
+                    if item["panel"] != "standalone" and (width, height) != (832, 468):
+                        errors.append(f"{shot}: extracted panel is {width}x{height}; expected 832x468")
+                except ValueError as exc:
+                    errors.append(str(exc))
+            if not (ROOT / item["review_source"]).is_file():
+                errors.append(f"{shot}: missing approved review source: {item['review_source']}")
+        if input_next_start != EXPECTED_END:
+            errors.append(f"video inputs end at {input_next_start}s, expected {EXPECTED_END}s")
+
     reference_paths = [
         *sorted((ROOT / "frames").glob("*.png")),
         *sorted((ROOT / "locations").glob("*.png")),
@@ -87,7 +126,11 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"Validated {len(rows)} sheets covering 0-{EXPECTED_END}s and {len(reference_paths)} near-16:9 references.")
+    input_count = len(inputs) if VIDEO_INPUTS.is_file() else 0
+    print(
+        f"Validated {len(rows)} sheets covering 0-{EXPECTED_END}s, "
+        f"{input_count} standalone shot inputs, and {len(reference_paths)} near-16:9 references."
+    )
     return 0
 
 

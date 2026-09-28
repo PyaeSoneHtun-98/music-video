@@ -16,8 +16,8 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S01 production sheet: [storyboards/S01.html](storyboards/S01.html) (six true 16:9 picture windows)
 - S02 production sheet: [storyboards/S02.html](storyboards/S02.html) (approved)
 - S03 production sheet: [storyboards/S03.html](storyboards/S03.html) (approved)
-- S04 production sheet: [storyboards/S04.html](storyboards/S04.html) (approved one-generation combined image)
-- S05 production sheet: [storyboards/S05.html](storyboards/S05.html) (approved combined image with one route correction)
+- S04 production sheet: [storyboards/S04-combined.png](storyboards/S04-combined.png) (approved one-generation combined image; [archival layout](storyboards/S04.html))
+- S05 production sheet: [storyboards/S05-combined.png](storyboards/S05-combined.png) (approved combined image with one route correction; [archival layout](storyboards/S05.html))
 - S06 production sheet: [storyboards/S06-combined.png](storyboards/S06-combined.png) (approved clean combined image with one prop correction)
 - S07 production sheet: [storyboards/S07-combined.png](storyboards/S07-combined.png) (approved; four matched 16:9 frames)
 - S08 production sheet: [storyboards/S08-combined-v2.png](storyboards/S08-combined-v2.png) (approved glass-window revision)
@@ -43,6 +43,13 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S28 final frame: [frames/S28-01-final-image-v2.png](frames/S28-01-final-image-v2.png) (approved clean 16:9 image; couple at the rail, shirt matched to character sheet)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
+## Seedance shot inputs
+
+- All 28 story segments are approved. [production/video-inputs.csv](production/video-inputs.csv) maps **108 individual shots** across 0–410 seconds to their exact standalone input frames and approved review sources.
+- The 22 approved four-panel sheets were separated into **88 clean 832 × 468 (exact 16:9)** files named `frames/Sxx-yy-input.png`. The other 20 shots already had independent frames. The center gutters are excluded; the art is not stretched or upscaled.
+- Use the file in `input_frame` for each shot, set Seedance to **16:9 landscape**, and follow that shot's direction in `prompts/Sxx.md`. A combined sheet is for review and must not be used as one video input.
+- The extraction is reproducible with `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare_video_inputs.ps1`. Rebuild the timing map with `python scripts/build_video_input_manifest.py`, then run `python scripts/validate_project.py`.
+
 ## Format
 
 - Master video: **16:9 landscape**, export at **1920 × 1080**.
@@ -55,7 +62,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 
 1. Use the character sheets `zinzin.png` and `pyaesone.png` as identity references.
 2. Write a prompt for each shot in `prompts/Sxx.md` and keep timing in `production/shot-list.csv`.
-3. For review, generate either independent near-16:9 frames or one combined sheet with equal 16:9 quadrants. Prepare one separate 16:9 image per shot before using it as a Seedance input; the full contact sheet is a visual plan.
+3. For review, generate either independent near-16:9 frames or one combined sheet with equal 16:9 quadrants. The separate approved Seedance inputs are listed in `production/video-inputs.csv`; the full contact sheet is a visual plan.
 4. Present each completed sheet for visual approval before starting the next one. Fix any malformed image or continuity issue first.
    Future combined-sheet reviews show the clean unlabeled image; timestamps live in the prompt and schedule files, not on the image.
 5. Generate the video shots at the platform’s **16:9 setting**; keep characters, wardrobe and town geography consistent.
