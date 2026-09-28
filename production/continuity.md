@@ -2,8 +2,8 @@
 
 ## Names and appearance
 
-- **Zin Zin:** short young adult; round gold glasses; dark side braid with red tie; blue patterned blouse; wide blue jeans; brown shoulder bag with spotted plush charm; teal dinosaur plush.
-- **Pyae Sone:** taller young adult; short dark hair; black glasses; white short-sleeve shirt; dark trousers. **Empty hands. No spare shirt or jacket carried.**
+- **Zin Zin:** short young adult; round gold glasses; dark side braid with red tie; blue patterned blouse; wide blue jeans; brown shoulder bag with pink bow and small white trinket; teal dinosaur plush. The spotted charm hangs from her bag only before S10.
+- **Pyae Sone:** taller young adult; short dark hair; black glasses; white short-sleeve shirt; dark trousers. His hands are empty until he retrieves the spotted charm in S11; from S11 to S25 he holds that one small charm. No spare shirt or jacket carried.
 - The text printed inside the source reference sheets is not part of the story. Use the names above only in production files, never as on-screen graphics.
 
 ## World
