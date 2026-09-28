@@ -51,7 +51,7 @@ Each row represents one video generation target. The three beats are shot ideas,
 | 18 | 4:15–4:30 | The bell | A harbor bell rings; both turn to the same sound from different locations; use matching close-ups and matching camera movement. |
 | 19 | 4:30–4:45 | Last crossing | Zin Zin crosses a narrow bridge toward the lighthouse; he reaches the other end seconds later; the camera reveals the near miss. |
 | 20 | 4:45–5:00 | He calls out | He sees her silhouette through the rain and calls; wind masks it; Zin Zin stops because she glimpses a familiar reflection, then keeps climbing. |
-| 21 | 5:00–5:15 | Storm breaks | Rain thins; moonlight and first blue light spread over the sea; both are small figures moving toward the lighthouse from opposite paths. |
+| 21 | 5:00–5:15 | Storm breaks | Rain thins; moonlight and first blue light spread over the sea; both are small figures climbing the same west stair route toward the lighthouse, with Zin Zin still far ahead. |
 | 22 | 5:15–5:30 | Where they began | At the overlook, repeat the composition of their remembered summer visit, but show Zin Zin alone; she sets the plush beside her. |
 | 23 | 5:30–5:45 | The final steps | Pyae Sone climbs the last staircase; tight insert of the recovered charm in his hand; cut to Zin Zin noticing a footstep. |
 | 24 | 5:45–6:00 | First sight | One held, simple two-person wide shot: they see each other across the wet terrace; allow the music and silence in their expressions to carry it. |
