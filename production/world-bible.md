@@ -8,6 +8,7 @@ This is one fictional town. Reuse the same architecture and landmarks across sho
 - A smaller covered shelter lies farther downhill on that same tram line, before the market road. Zin Zin can reach it from the descending hillside steps without reversing her route.
 - The **covered market and bakery** sit midway down the hill, beside the lower road. The road itself is open to rain and has smooth dark asphalt; market canopies cover only stalls and side walkways, not the street.
 - The **ferry pier** sits on the lower waterfront south of the market.
+- One dark bronze harbor signal bell hangs in an open frame at the ferry pier. Its sound reaches both stair approaches during the storm.
 - A **narrow footbridge** crosses the canal between the market road and the eastern breakwater path.
 - The **lighthouse** stands at the eastern end of the breakwater. The **upper overlook** next to it faces back toward the town and harbor. West steps rise from the footbridge; east steps rise from the pier road.
 - A small roofed wayside shrine alcove sits beside a west stair landing. A short drainage lane between east stair flights can flood during the storm. These are parts of the established approaches, not separate destinations.
