@@ -24,6 +24,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S10 production sheet: [storyboards/S10-combined-v2.png](storyboards/S10-combined-v2.png) (approved free-falling charm revision)
 - S11 production sheet: [storyboards/S11-combined.png](storyboards/S11-combined.png) (approved original version)
 - S12 production sheet: [storyboards/S12-combined.png](storyboards/S12-combined.png) (approved)
+- S13 production sheet: [storyboards/S13-combined-v2.png](storyboards/S13-combined-v2.png) (approved)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
 ## Format
