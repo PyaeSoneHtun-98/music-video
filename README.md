@@ -43,12 +43,12 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - S28 final frame: [frames/S28-01-final-image-v2.png](frames/S28-01-final-image-v2.png) (approved clean 16:9 image; couple at the rail, shirt matched to character sheet)
 - Early S01 concept: [storyboards/S01-the-town-after-rain-v2.png](storyboards/S01-the-town-after-rain-v2.png) (planning only; its cells are not 16:9 video inputs)
 
-## Seedance shot inputs
+## Seedance segment workflow
 
-- All 28 story segments are approved. [production/video-inputs.csv](production/video-inputs.csv) maps **108 individual shots** across 0–410 seconds to their exact standalone input frames and approved review sources.
-- The 22 approved four-panel sheets were separated into **88 clean 832 × 468 (exact 16:9)** files named `frames/Sxx-yy-input.png`. The other 20 shots already had independent frames. The center gutters are excluded; the art is not stretched or upscaled.
-- Use the file in `input_frame` for each shot, set Seedance to **16:9 landscape**, and follow that shot's direction in `prompts/Sxx.md`. A combined sheet is for review and must not be used as one video input.
-- The extraction is reproducible with `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare_video_inputs.ps1`. Rebuild the timing map with `python scripts/build_video_input_manifest.py`, then run `python scripts/validate_project.py`.
+- All 28 story segments are approved. Generate **one multi-shot clip per segment**: 15 seconds for S01–S27 and 5 seconds for S28. Attach the approved storyboard image as a visual reference, set Seedance to **16:9 landscape**, and prepare one timed segment prompt in `prompts/Sxx.md` before generation. Each panel becomes a sequential shot; the video must not display the storyboard grid. An intentional split-screen within a shot is retained.
+- S01–S03 currently have HTML review layouts rather than uploadable combined images. Use their approved individual frames together as references for a single segment generation. S24 and S28 use their approved single-frame images.
+- [production/video-inputs.csv](production/video-inputs.csv) remains a **108-shot timing and fallback library**. Its 88 extracted 832 × 468 panels and 20 original standalone frames can support retries or individual-shot repairs; they are no longer the primary generation sequence.
+- The fallback extraction remains reproducible with `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare_video_inputs.ps1`. Rebuild its timing map with `python scripts/build_video_input_manifest.py`, then run `python scripts/validate_project.py`.
 
 ## Format
 
@@ -61,11 +61,11 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 ## Workflow
 
 1. Use the character sheets `zinzin.png` and `pyaesone.png` as identity references.
-2. Write a prompt for each shot in `prompts/Sxx.md` and keep timing in `production/shot-list.csv`.
-3. For review, generate either independent near-16:9 frames or one combined sheet with equal 16:9 quadrants. The separate approved Seedance inputs are listed in `production/video-inputs.csv`; the full contact sheet is a visual plan.
+2. Write one timed multi-shot video prompt per segment in `prompts/Sxx.md` and keep segment timing in `production/shot-list.csv`.
+3. Use approved sheets as visual references for whole-segment generation. The separate approved frames in `production/video-inputs.csv` remain available for retries and repair shots.
 4. Present each completed sheet for visual approval before starting the next one. Fix any malformed image or continuity issue first.
    Future combined-sheet reviews show the clean unlabeled image; timestamps live in the prompt and schedule files, not on the image.
-5. Generate the video shots at the platform’s **16:9 setting**; keep characters, wardrobe and town geography consistent.
+5. Generate one 16:9 video clip per segment, translating storyboard panels into sequential full-screen shots while keeping characters, wardrobe and town geography consistent.
 6. Assemble and trim the videos to the local audio in an editor, then export the master at 1920 × 1080.
 7. Run `python scripts/validate_project.py` after adding or changing still frames or the schedule.
 

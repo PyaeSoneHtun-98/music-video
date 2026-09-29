@@ -15,5 +15,5 @@
 ## Framing
 
 - Every generated video shot is **16:9 landscape**. Set the ratio in Seedance and export the completed film at 1920 × 1080.
-- Generate reference stills as independent 16:9 compositions. A contact sheet can have any outer layout, and its panels must never be used as final input frames unless extracted/reframed to 16:9.
+- Generate reference stills as independent 16:9 compositions. An approved contact sheet may guide a whole segment as a multi-shot reference; the resulting video does not show the contact-sheet grid or dividers. A deliberate split-screen within one shot is allowed. Individual extracted frames remain available for retries.
 - Keep faces, hands, charm and plush safely inside the frame so minor scaling will not crop story information.
