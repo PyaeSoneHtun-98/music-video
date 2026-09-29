@@ -14,7 +14,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 - Reusable [location references](locations/) and [prop reference](props/P01-reunion-props.png)
 - Reproducible [reference asset prompts](prompts/reference-assets.md)
 - S01 production sheet: [storyboards/S01.html](storyboards/S01.html) (six true 16:9 picture windows)
-- S02 production sheet: [storyboards/S02.html](storyboards/S02.html) (approved)
+- S02 production sheet: [storyboards/S02-combined.png](storyboards/S02-combined.png) (approved frames assembled as one clean uploadable image; [archival layout](storyboards/S02.html))
 - S03 production sheet: [storyboards/S03.html](storyboards/S03.html) (approved)
 - S04 production sheet: [storyboards/S04-combined.png](storyboards/S04-combined.png) (approved one-generation combined image; [archival layout](storyboards/S04.html))
 - S05 production sheet: [storyboards/S05-combined.png](storyboards/S05-combined.png) (approved combined image with one route correction; [archival layout](storyboards/S05.html))
@@ -46,7 +46,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 ## Seedance segment workflow
 
 - All 28 story segments are approved. Generate **one multi-shot clip per segment**: 15 seconds for S01–S27 and 5 seconds for S28. Attach the approved storyboard image as a visual reference, set Seedance to **16:9 landscape**, and prepare one timed segment prompt in `prompts/Sxx.md` before generation. Each panel becomes a sequential shot; the video must not display the storyboard grid. An intentional split-screen within a shot is retained.
-- S01–S03 currently have HTML review layouts rather than uploadable combined images. Use their approved individual frames together as references for a single segment generation. S24 and S28 use their approved single-frame images.
+- S02 uses its clean combined storyboard image as one upload. S01 and S03 still need uploadable combined images; their approved individual frames can guide a single segment generation until those sheets are prepared. S24 and S28 use their approved single-frame images.
 - [production/video-inputs.csv](production/video-inputs.csv) remains a **108-shot timing and fallback library**. Its 88 extracted 832 × 468 panels and 20 original standalone frames can support retries or individual-shot repairs; they are no longer the primary generation sequence.
 - The fallback extraction remains reproducible with `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare_video_inputs.ps1`. Rebuild its timing map with `python scripts/build_video_input_manifest.py`, then run `python scripts/validate_project.py`.
 
