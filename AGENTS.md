@@ -16,7 +16,7 @@ If any sources disagree, fix the inconsistency before generating more assets.
 
 ## Asset workflow
 
-- Plan a review sheet either from independent **16:9 landscape** frames or from one combined image with four equal 16:9 quadrants, as approved for S04. For video generation, use each approved storyboard sheet as the visual reference for one complete 15-second segment (S28 is 5 seconds). Prompt sequential shots in panel order; the generated video must not show the contact-sheet grid. An intentional split-screen within a single approved shot is allowed.
+- Plan a review sheet either from independent **16:9 landscape** frames or from one combined image with four equal 16:9 quadrants, as approved for S04. For video generation, make one 15-second Seedance clip from each approved storyboard reference, including S28; select five seconds from S28 for the final 06:45–06:50 edit. Prompt sequential shots in panel order; the generated video must not show the contact-sheet grid. An intentional split-screen within a single approved shot is allowed.
 - Give every frame a stable ID and path: `frames/S01-01-coastal-town.png`, `frames/S01-02-rail-drops.png`, and so on.
 - Reuse the source character sheets, appropriate location masters and prop master as image references. Prompt for only the people and objects the shot needs.
 - Pyae Sone wears the white short-sleeve shirt and dark trousers; his hands are empty unless a story action explicitly uses the charm. Do not add a carried jacket or extra shirt.
