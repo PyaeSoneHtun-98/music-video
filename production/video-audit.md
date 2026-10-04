@@ -2,22 +2,18 @@
 
 ## Result
 
-41 MP4 downloads were inspected and renamed in the local `videos/` directory across two audit passes. All 41 decode without reported errors. Their bytes were preserved and SHA256 verified after renaming. No clips were deleted, trimmed, re-encoded or marked visually approved.
+43 MP4 downloads were inspected and renamed across three audit passes. All 43 decoded without reported errors when inspected. The `videos/` directory now contains 40 files; the three previously audited unrelated office downloads are no longer present. All 40 current files were hash-verified. No clips were deleted, trimmed, re-encoded or marked visually approved by the audit.
 
-- 36 unique files: 34 music-video takes and 2 unrelated office clips.
-- 5 exact duplicate downloads, retained with `duplicate-01` suffixes.
-- Coverage for 26 of the 28 segments. S01 coverage consists of six individual raw clips, not an assembled 15-second segment.
-- **Missing: S13 and S16** — 30 seconds of planned story coverage.
+- 36 unique music-video files currently present, plus 4 exact duplicate downloads retained with `duplicate-01` suffixes.
+- Coverage for all 28 segments. S01 coverage consists of six individual raw clips, not an assembled 15-second segment.
+- **No missing segments.** S13 and S16 were identified in the third pass.
 - Present does not mean approved: several clips need continuity repairs or editing.
 
 The source-to-final filename map, hashes, technical metadata and individual findings are in [video-audit.csv](video-audit.csv). The separate [video-status.csv](video-status.csv) tracks downloaded video coverage. `shot-list.csv` continues to track storyboard progress; its `ready` state is not approval of these generated videos.
 
-## Missing segments
+## Segment coverage
 
-| Segment | Film time | Required action |
-|---|---|---|
-| S13 — Different stairways | 03:00–03:15 | Separate storm routes: Zin Zin on west stairs, Pyae Sone on east route holding charm. |
-| S16 — The clue | 03:45–04:00 | Pyae Sone recognizes the wordless ceramic lighthouse mural and chooses upper east stairs. |
+No planned segment is missing from the current folder. S12 and S23 were found in the second pass, and S13 and S16 in the third. Clips with `needs_repair` or `awaiting_video_review` status still require work before final assembly approval.
 
 The two similar moonlit staircase videos are **both S21 takes**, not S21 and S23. Both start with a harbor view, then Zin Zin climbing, Pyae Sone climbing and a wider stair view. Neither contains S23's charm insert and threshold sequence.
 
@@ -45,7 +41,7 @@ S26's return and handhold are present, but the toy's distance from the pair and 
 
 ## Technical checks and edit requirements
 
-- 39 files are 1280 × 720 (16:9), HEVC, 24 fps. The 2 portrait files are the unrelated office-chair clip and its duplicate, at 720 × 1280.
+- All 40 current files are 1280 × 720 (16:9), HEVC, 24 fps. The previously audited portrait office files are now absent from the folder.
 - Each download has approximately **15.104 seconds container duration**, **15.041667 seconds video duration** (361 frames), and an audio stream. The small overrun is export padding, not evidence of a missing shot.
 - S01's six raw clips require selections of 2, 3, 2, 3, 2 and 3 seconds to assemble its planned 15 seconds. Do not concatenate all six at full length.
 - S02–S27 need exact 15-second timeline boundaries; generate S28 for 15 seconds and select five seconds for the final edit, as specified by remote commit `1f66d25`. Final sequence is 410 seconds against the local working music track.
@@ -55,7 +51,7 @@ S26's return and handhold are present, but the toy's distance from the pair and 
 
 ## Review scope
 
-All 41 files received metadata, full decode and SHA256 checks. Six distributed frames per file were visually checked for identity and segment mapping. One-second contact sheets were checked for selected narrative/continuity issues, including all four downloads in the second pass. This is a sampled visual audit, not a guarantee that every intermediate frame has correct fingers, motion or geometry. A continuous playback review is still needed before final video approval.
+All 43 historical downloads received metadata, full decode and SHA256 checks. Six distributed frames per file were visually checked for identity and segment mapping. One-second contact sheets were checked for selected narrative/continuity issues, including all new downloads in the second and third passes. This is a sampled visual audit, not a guarantee that every intermediate frame has correct fingers, motion or geometry. A continuous playback review is still needed before final video approval.
 
 Audit previews are local ignored files under `tmp/video-audit/`; overview row indices match `audit_index` in the CSV. They are analysis aids, not new storyboard/video inputs. Videos remain ignored by Git.
 
@@ -64,12 +60,12 @@ Audit previews are local ignored files under `tmp/video-audit/`; overview row in
 - `python scripts/apply_video_names.py` checks all mapped hashes and previews pending renames; `--apply` performs them. It is safe to rerun after completion.
 - `python scripts/apply_video_names.py --undo --apply` restores original download names with collision and hash checks when those names are unique. The second download batch reuses the original lighthouse filenames; full undo now refuses before any mutation because of those repeated historical names. Use the manifest to restore separate batches to separate directories if needed.
 - `scripts/audit_video_files.py` requires FFmpeg/ffprobe on PATH and Pillow. Run it with the bundled workspace Python if the default Python lacks Pillow. It reads local videos and writes ignored previews; rerunning after renaming creates a fresh inventory using current names.
-- Add `--new-only` to audit only names absent from the saved manifest. New previews go in `tmp/video-audit-recheck/`, preserving the first pass. Its preview indices 1–4 correspond to CSV audit indices 38–41 for this second pass.
+- Add `--new-only` to audit only names absent from the saved manifest. New previews go in `tmp/video-audit-recheck/`, preserving the first pass but replacing previous incremental previews. Current preview indices 1–2 correspond to CSV audit indices 42–43 for the third pass.
 - Preserve alternate S05, S07 and S21 takes until edit selection. `take-01` is a stable identifier, not a quality ranking.
 
 ## Completion checks
 
-41 filename changes applied across both passes, all hashes verified unchanged, 41 files retained. Project validation passed before committing each audit milestone. Storyboard approval and previously pending project changes are separate from this video audit.
+43 filename changes applied across three passes, all renamed contents verified unchanged. 40 files are currently present; 3 unrelated historical downloads are recorded as `absent` in the manifest and skipped by the rename utility. Project validation passed before committing each audit milestone. Storyboard approval and previously pending project changes are separate from this video audit.
 
 ## Second pass — 2026-10-04, after additional downloads
 
@@ -77,3 +73,10 @@ Audit previews are local ignored files under `tmp/video-audit/`; overview row in
 - `Rainy Market Video (13).mp4` is now `S23-the-final-steps-take-01.mp4`. All four planned actions are identifiable, but plush and charm continuity need repairs as above.
 - The two newly present `Zin Zin's Lighthouse` downloads are exact SHA256 duplicates of existing S27 and S22 takes, not repaired versions. Both are retained with duplicate suffixes.
 - Rechecked all 37 earlier files against the saved hashes; contents are unchanged, so earlier findings still apply.
+
+## Third pass — 2026-10-04, final missing downloads
+
+- `Cinematic Anime Video (7).mp4` is now `S16-the-clue-take-01.mp4`. The four planned mural-recognition and stair-choice scenes are identifiable; no grid appears in sampled frames.
+- `Cinematic Anime Video (8).mp4` is now `S13-different-stairways-take-01.mp4`. Separate stair/pier routes and correct recovered-charm ownership are present. An added Zin Zin front close-up around 10 seconds and weak storm rain need timing/weather review.
+- The three unrelated office clips are absent from `videos/`; their historical audit rows and hashes remain preserved.
+- S23's approved storyboard remains unchanged. Its segment prompt now explicitly locks the plush to the ground, Zin Zin's hands empty, and the spotted charm exclusively to Pyae Sone for a retry.

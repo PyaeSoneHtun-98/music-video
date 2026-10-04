@@ -4,7 +4,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 
 ## Current state
 
-- Downloaded video audit (2026-10-04, updated after new downloads): [findings and missing segments](production/video-audit.md), [rename map](production/video-audit.csv), and [video coverage tracker](production/video-status.csv). 41 downloads renamed; S13 and S16 are missing. S12 and S23 are now present, with S23 needing continuity repairs; storyboard approval does not imply video approval.
+- Downloaded video audit (2026-10-04, third pass): [findings and coverage](production/video-audit.md), [rename map](production/video-audit.csv), and [video coverage tracker](production/video-status.csv). All 28 segments now have source footage; 40 files currently present, with 43 historical downloads audited. Several clips, including S23, need continuity repairs; storyboard approval does not imply video approval.
 - Story outline and 28-sheet production grid: [story-outline.md](story-outline.md)
 - Production instructions for future agents: [AGENTS.md](AGENTS.md)
 - Master schedule and progress: [production/shot-list.csv](production/shot-list.csv)

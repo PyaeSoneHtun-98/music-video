@@ -25,6 +25,9 @@ def main():
             old, new = new, old
         if Path(old).name != old or Path(new).name != new:
             raise ValueError('Manifest names must be plain filenames.')
+        if row.get('availability') == 'absent':
+            print(f'Previously audited file absent from videos folder: {row["renamed_name"]}')
+            continue
         source, target = ROOT / 'videos' / old, ROOT / 'videos' / new
         if target in destinations:
             raise ValueError(f'Repeated historical destination: {target}. Restore download batches separately.')
