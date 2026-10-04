@@ -1,0 +1,61 @@
+edit_id,segment_id,timeline_in,timeline_out,mode,source,source_in,source_out,note
+E001,S01,0,2,video,videos/S01-01-coastal-town-take-01.mp4,2,4,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E002,S01,2,5,video,videos/S01-02-rail-drops-take-01.mp4,2,5,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E003,S01,5,7,video,videos/S01-03-lighthouse-take-01.mp4,2,4,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E004,S01,7,10,video,videos/S01-04-zinzin-tram-take-01.mp4,2,5,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E005,S01,10,12,video,videos/S01-05-pyaesone-arrival-take-01.mp4,2,4,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E006,S01,12,15,video,videos/S01-06-separate-gazes-take-01.mp4,2,5,Select stable motion from individual raw clip; preserve opening six-shot plan.
+E007,S02,15,30,video,videos/S02-two-journeys-begin-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E008,S03,30,45,video,videos/S03-the-promise-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E009,S04,45,60,video,videos/S04-almost-on-time-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E010,S05,60,75,video,videos/S05-first-downpour-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E011,S06,75,79,still,frames/S06-01-input.png,,,Approved frame with gentle push replaces source-grid opening.
+E012,S06,79,82,video,videos/S06-closed-route-take-01.mp4,2.1,7.8,Passengers exit; retime clean full-screen passage.
+E013,S06,82,86,video,videos/S06-closed-route-take-01.mp4,8.1,11.35,Bridge route; trim transition overlap.
+E014,S06,86,90,video,videos/S06-closed-route-take-01.mp4,11.55,15,Pyae bakery search; fit planned ending.
+E015,S07,90,105,video,videos/S07-passing-shadows-take-02.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E016,S08,105,120,video,videos/S08-warm-window-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E017,S09,120,135,video,videos/S09-his-route-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E018,S10,135,139,still,frames/S10-01-input.png,,,Approved bag frame replaces charm caught on rail.
+E019,S10,139,143,still,frames/S10-02-input.png,,,Approved free-fall illustration with gentle push; actual fall animation still needs regeneration.
+E020,S10,143,146,video,videos/S10-the-charm-falls-take-01.mp4,8.1,10.9,Dropped charm in puddle.
+E021,S10,146,150,video,videos/S10-the-charm-falls-take-01.mp4,11.2,15,Zin continues unaware.
+E022,S11,150,165,video,videos/S11-recognition-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E023,S12,165,180,video,videos/S12-summer-memory-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E024,S13,180,195,video,videos/S13-different-stairways-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E025,S14,195,199,still,frames/S14-01-input.png,,,Approved gust frame avoids charm reappearing on bag.
+E026,S14,199,203,video,videos/S14-wind-and-water-take-01.mp4,4.1,6.8,Selected generated footage; exact segment duration; source audio discarded.
+E027,S14,203,207,video,videos/S14-wind-and-water-take-01.mp4,7.1,10.8,Selected generated footage; exact segment duration; source audio discarded.
+E028,S14,207,210,video,videos/S14-wind-and-water-take-01.mp4,11.1,15,Selected generated footage; exact segment duration; source audio discarded.
+E029,S15,210,225,video,videos/S15-doubt-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E030,S16,225,240,video,videos/S16-the-clue-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E031,S17,240,255,video,videos/S17-town-of-reflections-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E032,S18,255,270,video,videos/S18-the-bell-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E033,S19,270,274,still,frames/S19-01-input.png,,,Approved bridge frame preserves bag without recovered charm.
+E034,S19,274,278,still,frames/S19-02-input.png,,,Approved stair frame replaces premature charm return.
+E035,S19,278,281,video,videos/S19-last-crossing-take-01.mp4,8.1,10.8,Selected generated footage; exact segment duration; source audio discarded.
+E036,S19,281,285,video,videos/S19-last-crossing-take-01.mp4,11.2,15,Selected generated footage; exact segment duration; source audio discarded.
+E037,S20,285,289,still,frames/S20-01-input.png,,,Approved wide includes distant Zin on same stairs.
+E038,S20,289,293,video,videos/S20-he-calls-out-take-01.mp4,2.1,4.9,Pyae calls while holding charm; retimed portrait.
+E039,S20,293,297,still,frames/S20-03-input.png,,,Approved stair-edge reaction avoids duplicated bag charm.
+E040,S20,297,300,still,frames/S20-04-input.png,,,Approved rear climb keeps charm absent and storm continuity.
+E041,S21,300,304,video,videos/S21-storm-breaks-take-01.mp4,0,3.9,Selected generated footage; exact segment duration; source audio discarded.
+E042,S21,304,308,still,frames/S21-02-input.png,,,Approved moonlit climb replaces charm on Zin bag.
+E043,S21,308,312,video,videos/S21-storm-breaks-take-01.mp4,8.1,11.8,Selected generated footage; exact segment duration; source audio discarded.
+E044,S21,312,315,video,videos/S21-storm-breaks-take-01.mp4,12.1,15,Selected generated footage; exact segment duration; source audio discarded.
+E045,S22,315,330,video,videos/S22-where-they-began-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E046,S23,330,334,video,videos/S23-the-final-steps-take-02.mp4,0,2.9,Selected generated footage; exact segment duration; source audio discarded.
+E047,S23,334,338,video,videos/S23-the-final-steps-take-02.mp4,3.1,4.9,Single recovered charm insert; slow to planned duration.
+E048,S23,338,342,still,frames/S23-03-input.png,,,Approved head-turn frame replaces duplicated plush in take 02.
+E049,S23,342,345,video,videos/S23-the-final-steps-take-02.mp4,10.2,13.2,Threshold pause; end before shared sight line.
+E050,S24,345,360,still,frames/S24-01-first-sight.png,,,Approved continuous two-person hold replaces unwanted cut and incorrect props.
+E051,S25,360,364,video,videos/S25-reunion-take-01.mp4,0,2.85,Zin recognition portrait.
+E052,S25,364,368,video,videos/S25-reunion-take-01.mp4,3.1,6.8,Pyae recognition portrait.
+E053,S25,368,372,still,frames/S25-03-input.png,,,Approved approach frame avoids charm duplication on bag.
+E054,S25,372,375,still,frames/S25-04-input.png,,,Approved arm-length two-shot; charm remains with Pyae.
+E055,S26,375,390,video,videos/S26-the-little-promise-take-01.mp4,0,15,Selected generated footage; exact segment duration; source audio discarded.
+E056,S27,390,394,still,frames/S27-01-input.png,,,Approved linked-hands approach toward plush by rail.
+E057,S27,394,398,still,frames/S27-02-input.png,,,Approved pair standing directly beside rail and toy.
+E058,S27,398,401,video,videos/S27-new-morning-take-01.mp4,8.1,10.8,Warm dawn side portrait.
+E059,S27,401,405,still,frames/S27-04-input.png,,,Approved wide preserves nearby plush and rail placement.
+E060,S28,405,410,still,frames/S28-01-final-image-v2.png,,,Approved waist-level linked-hands hold; final one-second fade.

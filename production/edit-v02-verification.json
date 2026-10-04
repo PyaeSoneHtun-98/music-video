@@ -1,0 +1,23 @@
+{
+  "export": "exports/Zin-Zin-Pyae-Sone-review-v02.mp4",
+  "duration_seconds": 410.0,
+  "frame_count": 9840,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "decode_ok": true,
+  "music_correlation_first_408_seconds": 0.9990569936911523,
+  "music_rms_ratio_first_408_seconds": 0.9637732439291721,
+  "edit_events": 60,
+  "approval": "in_review",
+  "visual_review": "All 60 edit-event midpoints sampled on v01; 59 cached encodes reused unchanged in v02. Revised S10 insert sampled at eight moments; opening, stair insert and ending fades checked on v02. This is sampled visual QA, not a complete continuous playback review.",
+  "manifest": "production/edit-v02.csv",
+  "export_sha256": "49b1eb2f3fb0640952e64a65760f9cbf62d92831a0efa76143165e5ca65f341c",
+  "illustrated_hold_seconds": 78,
+  "planned_illustrated_hold_seconds": 20,
+  "temporary_illustrated_repair_seconds": 58
+}

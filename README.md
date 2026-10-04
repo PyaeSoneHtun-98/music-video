@@ -4,6 +4,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 
 ## Current state
 
+- First music-video review cut (2026-10-04): [edit decisions](production/edit-v02.md) and [saved timeline](production/edit-v02.csv). Local export: `exports/Zin-Zin-Pyae-Sone-review-v02.mp4`, 6:50, 1920 × 1080 at 24 fps, using `sparkle.m4a` as the sole soundtrack. Includes temporary illustrated repairs; awaiting review. Export and song remain outside Git.
 - Downloaded video audit (2026-10-04, fourth pass): [findings and coverage](production/video-audit.md), [rename map](production/video-audit.csv), and [video coverage tracker](production/video-status.csv). All 28 segments have source footage; 41 files currently present, with 44 historical downloads audited. S23 take 02 fixes charm ownership but duplicates the plush in the turning shot; several clips still need repairs. MP4 files stay local and are ignored by Git.
 - Story outline and 28-sheet production grid: [story-outline.md](story-outline.md)
 - Production instructions for future agents: [AGENTS.md](AGENTS.md)

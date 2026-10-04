@@ -7,6 +7,7 @@
 /tmp/
 *.mp4
 *.mov
+/videos.zip
 
 # Earlier concept sheet with inaccurate aspect ratio and a clothing error.
 /storyboards/S01-the-town-after-rain.png
