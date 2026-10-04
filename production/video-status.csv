@@ -1,0 +1,29 @@
+segment_id,title,start_seconds,end_seconds,video_status,files
+S01,The town after rain,0,15,needs_assembly,S01-01-coastal-town-take-01.mp4; S01-02-rail-drops-take-01.mp4; S01-03-lighthouse-take-01.mp4; S01-04-zinzin-tram-take-01.mp4; S01-05-pyaesone-arrival-take-01.mp4; S01-06-separate-gazes-take-01.mp4
+S02,Two journeys begin,15,30,awaiting_video_review,S02-two-journeys-begin-take-01.mp4
+S03,The promise,30,45,awaiting_video_review,S03-the-promise-take-01.mp4
+S04,Almost on time,45,60,awaiting_video_review,S04-almost-on-time-take-01.mp4
+S05,First downpour,60,75,awaiting_video_review,S05-first-downpour-take-02.mp4; S05-first-downpour-take-01.mp4
+S06,Closed route,75,90,needs_repair,S06-closed-route-take-01.mp4
+S07,Passing shadows,90,105,awaiting_video_review,S07-passing-shadows-take-01-rejected.mp4; S07-passing-shadows-take-02.mp4
+S08,Warm window,105,120,awaiting_video_review,S08-warm-window-take-01.mp4
+S09,His route,120,135,awaiting_video_review,S09-his-route-take-01.mp4
+S10,The charm falls,135,150,needs_repair,S10-the-charm-falls-take-01.mp4
+S11,Recognition,150,165,awaiting_video_review,S11-recognition-take-01.mp4
+S12,Summer memory,165,180,missing,
+S13,Different stairways,180,195,missing,
+S14,Wind and water,195,210,needs_repair,S14-wind-and-water-take-01.mp4
+S15,Doubt,210,225,awaiting_video_review,S15-doubt-take-01.mp4
+S16,The clue,225,240,missing,
+S17,Town of reflections,240,255,awaiting_video_review,S17-town-of-reflections-take-01.mp4
+S18,The bell,255,270,awaiting_video_review,S18-the-bell-take-01.mp4
+S19,Last crossing,270,285,needs_repair,S19-last-crossing-take-01.mp4
+S20,He calls out,285,300,needs_repair,S20-he-calls-out-take-01.mp4
+S21,Storm breaks,300,315,needs_repair,S21-storm-breaks-take-01.mp4; S21-storm-breaks-take-02.mp4
+S22,Where they began,315,330,awaiting_video_review,S22-where-they-began-take-01.mp4
+S23,The final steps,330,345,missing,
+S24,First sight,345,360,needs_repair,S24-first-sight-take-01.mp4
+S25,Reunion,360,375,needs_repair,S25-reunion-take-01.mp4
+S26,The little promise,375,390,awaiting_video_review,S26-the-little-promise-take-01.mp4
+S27,New morning,390,405,needs_repair,S27-new-morning-take-01.mp4
+S28,Final image,405,410,needs_repair,S28-final-image-take-01.mp4
