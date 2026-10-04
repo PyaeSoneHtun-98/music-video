@@ -4,7 +4,7 @@ An original anime romance music video planned around a local 6:50 edit of RADWIM
 
 ## Current state
 
-- Downloaded video audit (2026-10-04, third pass): [findings and coverage](production/video-audit.md), [rename map](production/video-audit.csv), and [video coverage tracker](production/video-status.csv). All 28 segments now have source footage; 40 files currently present, with 43 historical downloads audited. Several clips, including S23, need continuity repairs; storyboard approval does not imply video approval.
+- Downloaded video audit (2026-10-04, fourth pass): [findings and coverage](production/video-audit.md), [rename map](production/video-audit.csv), and [video coverage tracker](production/video-status.csv). All 28 segments have source footage; 41 files currently present, with 44 historical downloads audited. S23 take 02 fixes charm ownership but duplicates the plush in the turning shot; several clips still need repairs. MP4 files stay local and are ignored by Git.
 - Story outline and 28-sheet production grid: [story-outline.md](story-outline.md)
 - Production instructions for future agents: [AGENTS.md](AGENTS.md)
 - Master schedule and progress: [production/shot-list.csv](production/shot-list.csv)
