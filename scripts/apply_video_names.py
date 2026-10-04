@@ -18,6 +18,7 @@ def main():
     with (ROOT / 'production/video-audit.csv').open(encoding='utf-8', newline='') as manifest:
         rows = list(csv.DictReader(manifest))
     pending = []
+    destinations = set()
     for row in rows:
         old, new = row['original_name'], row['renamed_name']
         if args.undo:
@@ -25,13 +26,18 @@ def main():
         if Path(old).name != old or Path(new).name != new:
             raise ValueError('Manifest names must be plain filenames.')
         source, target = ROOT / 'videos' / old, ROOT / 'videos' / new
+        if target in destinations:
+            raise ValueError(f'Repeated historical destination: {target}. Restore download batches separately.')
+        destinations.add(target)
+        if target.exists():
+            if digest(target) != row['sha256']:
+                raise ValueError(f'Destination content differs: {target}')
+            continue
         if source.exists():
-            if target.exists():
-                raise FileExistsError(target)
             if digest(source) != row['sha256']:
                 raise ValueError(f'Content changed: {source}')
             pending.append((source, target, row['sha256']))
-        elif not target.exists() or digest(target) != row['sha256']:
+        else:
             raise FileNotFoundError(f'Expected content absent: {source}')
     # All source contents and destinations are checked before the first mutation.
     for source, target, expected in pending:

@@ -1,5 +1,7 @@
 """Inspect local videos without modifying their contents; write ignored audit previews."""
 import concurrent.futures
+import argparse
+import csv
 import hashlib
 import json
 import pathlib
@@ -7,7 +9,10 @@ import subprocess
 from PIL import Image, ImageDraw
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-OUT = ROOT / 'tmp' / 'video-audit'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--new-only', action='store_true', help='Inspect filenames absent from the saved rename manifest.')
+args = parser.parse_args()
+OUT = ROOT / 'tmp' / ('video-audit-recheck' if args.new_only else 'video-audit')
 OUT.mkdir(parents=True, exist_ok=True)
 
 def inspect(item):
@@ -32,6 +37,10 @@ def inspect(item):
     return row
 
 paths = sorted((ROOT / 'videos').glob('*.mp4'), key=lambda p: p.name.lower())
+if args.new_only:
+    with (ROOT / 'production/video-audit.csv').open(encoding='utf-8', newline='') as manifest:
+        known_names = {row['renamed_name'].lower() for row in csv.DictReader(manifest)}
+    paths = [path for path in paths if path.name.lower() not in known_names]
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
     rows = list(pool.map(inspect, enumerate(paths, 1)))
 (OUT / 'inventory.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')

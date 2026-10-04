@@ -2,12 +2,12 @@
 
 ## Result
 
-37 MP4 downloads were inspected and renamed in the local `videos/` directory. All 37 decode without reported errors. Their bytes were preserved and SHA256 verified after renaming. No clips were deleted, trimmed, re-encoded or marked visually approved.
+41 MP4 downloads were inspected and renamed in the local `videos/` directory across two audit passes. All 41 decode without reported errors. Their bytes were preserved and SHA256 verified after renaming. No clips were deleted, trimmed, re-encoded or marked visually approved.
 
-- 34 unique files: 32 music-video takes and 2 unrelated office clips.
-- 3 exact duplicate downloads, retained with `duplicate-01` suffixes.
-- Coverage for 24 of the 28 segments. S01 coverage consists of six individual raw clips, not an assembled 15-second segment.
-- **Missing: S12, S13, S16 and S23** — 60 seconds of planned story coverage.
+- 36 unique files: 34 music-video takes and 2 unrelated office clips.
+- 5 exact duplicate downloads, retained with `duplicate-01` suffixes.
+- Coverage for 26 of the 28 segments. S01 coverage consists of six individual raw clips, not an assembled 15-second segment.
+- **Missing: S13 and S16** — 30 seconds of planned story coverage.
 - Present does not mean approved: several clips need continuity repairs or editing.
 
 The source-to-final filename map, hashes, technical metadata and individual findings are in [video-audit.csv](video-audit.csv). The separate [video-status.csv](video-status.csv) tracks downloaded video coverage. `shot-list.csv` continues to track storyboard progress; its `ready` state is not approval of these generated videos.
@@ -16,10 +16,8 @@ The source-to-final filename map, hashes, technical metadata and individual find
 
 | Segment | Film time | Required action |
 |---|---|---|
-| S12 — Summer memory | 02:45–03:00 | Warm summer bench, pier walk, laughter and bakery-awning rain memory. |
 | S13 — Different stairways | 03:00–03:15 | Separate storm routes: Zin Zin on west stairs, Pyae Sone on east route holding charm. |
 | S16 — The clue | 03:45–04:00 | Pyae Sone recognizes the wordless ceramic lighthouse mural and chooses upper east stairs. |
-| S23 — The final steps | 05:30–05:45 | Last west-stair climb, charm insert, Zin Zin turns back and Pyae Sone reaches threshold. |
 
 The two similar moonlit staircase videos are **both S21 takes**, not S21 and S23. Both start with a harbor view, then Zin Zin climbing, Pyae Sone climbing and a wider stair view. Neither contains S23's charm insert and threshold sequence.
 
@@ -37,6 +35,7 @@ Times below are approximate source-clip times. Findings are based on sampled fra
 | S19 | Charm is visible on Zin Zin's bag while Pyae Sone holds recovered charm later. | Repair duplicated prop state. |
 | S20 | Charm is again visible on her bag around 5–10 seconds. Storm looks weaker than requested. | Repair bag state and review storm continuity. |
 | S21 both takes | Charm remains on her bag around 4–7 seconds. | Repair bag state before selecting a take. |
+| S23 | Around 5–8 seconds Zin Zin holds the plush again and the spotted charm is already on her bag while Pyae Sone carries it. | Keep plush on paving beside right shoe and bag without charm until S26. |
 | S24 | Held wide cuts to close portrait around 9 seconds. She holds plush again and charm is already attached to bag. | Retry uninterrupted wide; plush stays on ground and charm stays with Pyae Sone. |
 | S25 | Charm is already on her bag while Pyae Sone carries it. | Repair before S26 returns charm. |
 | S27 | Pair stops away from fixed plush and rail in several wide shots. | Restore approved placement immediately beside rail and toy. |
@@ -46,7 +45,7 @@ S26's return and handhold are present, but the toy's distance from the pair and 
 
 ## Technical checks and edit requirements
 
-- 35 files are 1280 × 720 (16:9), HEVC, 24 fps. The 2 portrait files are the unrelated office-chair clip and its duplicate, at 720 × 1280.
+- 39 files are 1280 × 720 (16:9), HEVC, 24 fps. The 2 portrait files are the unrelated office-chair clip and its duplicate, at 720 × 1280.
 - Each download has approximately **15.104 seconds container duration**, **15.041667 seconds video duration** (361 frames), and an audio stream. The small overrun is export padding, not evidence of a missing shot.
 - S01's six raw clips require selections of 2, 3, 2, 3, 2 and 3 seconds to assemble its planned 15 seconds. Do not concatenate all six at full length.
 - S02–S27 need exact 15-second timeline boundaries; generate S28 for 15 seconds and select five seconds for the final edit, as specified by remote commit `1f66d25`. Final sequence is 410 seconds against the local working music track.
@@ -56,17 +55,25 @@ S26's return and handhold are present, but the toy's distance from the pair and 
 
 ## Review scope
 
-All 37 files received metadata, full decode and SHA256 checks. Six distributed frames per file were visually checked for identity and segment mapping. One-second contact sheets were checked for selected narrative/continuity issues. This is a sampled visual audit, not a guarantee that every intermediate frame has correct fingers, motion or geometry. A continuous playback review is still needed before final video approval.
+All 41 files received metadata, full decode and SHA256 checks. Six distributed frames per file were visually checked for identity and segment mapping. One-second contact sheets were checked for selected narrative/continuity issues, including all four downloads in the second pass. This is a sampled visual audit, not a guarantee that every intermediate frame has correct fingers, motion or geometry. A continuous playback review is still needed before final video approval.
 
 Audit previews are local ignored files under `tmp/video-audit/`; overview row indices match `audit_index` in the CSV. They are analysis aids, not new storyboard/video inputs. Videos remain ignored by Git.
 
 ## Reproducibility and recovery
 
 - `python scripts/apply_video_names.py` checks all mapped hashes and previews pending renames; `--apply` performs them. It is safe to rerun after completion.
-- `python scripts/apply_video_names.py --undo --apply` restores original download names with the same collision and hash checks.
+- `python scripts/apply_video_names.py --undo --apply` restores original download names with collision and hash checks when those names are unique. The second download batch reuses the original lighthouse filenames; full undo now refuses before any mutation because of those repeated historical names. Use the manifest to restore separate batches to separate directories if needed.
 - `scripts/audit_video_files.py` requires FFmpeg/ffprobe on PATH and Pillow. Run it with the bundled workspace Python if the default Python lacks Pillow. It reads local videos and writes ignored previews; rerunning after renaming creates a fresh inventory using current names.
+- Add `--new-only` to audit only names absent from the saved manifest. New previews go in `tmp/video-audit-recheck/`, preserving the first pass. Its preview indices 1–4 correspond to CSV audit indices 38–41 for this second pass.
 - Preserve alternate S05, S07 and S21 takes until edit selection. `take-01` is a stable identifier, not a quality ranking.
 
 ## Completion checks
 
-37 filename changes applied, all hashes verified unchanged, 37 files retained. Project validation passed before committing the audit milestone. Storyboard approval and previously pending project changes are separate from this video audit.
+41 filename changes applied across both passes, all hashes verified unchanged, 41 files retained. Project validation passed before committing each audit milestone. Storyboard approval and previously pending project changes are separate from this video audit.
+
+## Second pass — 2026-10-04, after additional downloads
+
+- `Rainy Market Video (12).mp4` is now `S12-summer-memory-take-01.mp4`. All four planned memory scenes are present; no grid appears in sampled frames. Remains awaiting video review, with dissolves rather than hard cuts.
+- `Rainy Market Video (13).mp4` is now `S23-the-final-steps-take-01.mp4`. All four planned actions are identifiable, but plush and charm continuity need repairs as above.
+- The two newly present `Zin Zin's Lighthouse` downloads are exact SHA256 duplicates of existing S27 and S22 takes, not repaired versions. Both are retained with duplicate suffixes.
+- Rechecked all 37 earlier files against the saved hashes; contents are unchanged, so earlier findings still apply.
